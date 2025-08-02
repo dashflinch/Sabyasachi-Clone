@@ -1,0 +1,49 @@
+@font-face {
+    font-family: Lato;
+    src: url("/Fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: Figtree;
+    src: url("/Fonts/Figtree-Medium.ttf");
+}
+
+@font-face {
+    font-family: Alata;
+    src: url("/Fonts/Alata-Regular.ttf");
+}
+
+@import "tailwindcss";
+
+
+@theme {
+    --font-Lato: Lato, sans-serif;
+}
+
+@theme {
+    --font-Figtree: Figtree, sans-serif;
+}
+
+@theme {
+    --font-Alata: Alata, sans-serif;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
